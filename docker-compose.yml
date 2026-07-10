@@ -1,0 +1,24 @@
+services:
+  tts:
+    build: .
+    container_name: fastapi-tts
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./storage:/data/audio
+      - huggingface_cache:/root/.cache/huggingface
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - MODEL_NAME=ai4bharat/IndicF5
+      - DEVICE=cpu
+      - DTYPE=float32
+      - DEFAULT_LANGUAGE=ben
+      - DEFAULT_VOICE=default
+      - INFERENCE_TIMEOUT=120
+      - OUTPUT_DIR=/data/audio
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
+
+volumes:
+  huggingface_cache:

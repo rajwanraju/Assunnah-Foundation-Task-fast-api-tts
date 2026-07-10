@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.pyo
+*.log
+.git
+.gitignore
+.env
+.env.example
+.dockerignore
+README.md
+storage/audio/
+assets/prompts/gen_ref.py
