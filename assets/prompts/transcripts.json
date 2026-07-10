@@ -1,0 +1,14 @@
+{
+  "default": {
+    "description": "English female speaker (IndicF5 example)",
+    "language": "eng",
+    "audio": "basic_ref_en.wav",
+    "transcript": "The quick brown fox jumps over the lazy dog near the bank of the river."
+  },
+  "bangla": {
+    "description": "Bangla voice",
+    "language": "ben",
+    "audio": "bangla_ref_fixed.wav",
+    "transcript": "আমি বাংলায় কথা বলি"
+  }
+}
